@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Layout from "../layout/index.vue";
+import Layout from "@/layout/index.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,7 +12,7 @@ const router = createRouter({
         {
           path: "/home",
           name: "home",
-          component: () => import("../views/home/index.vue"),
+          component: () => import("@/views/home/index.vue"),
         },
       ],
     },
@@ -23,7 +23,7 @@ const router = createRouter({
         {
           path: "",
           name: "schedule",
-          component: () => import("../views/schedule/index.vue"),
+          component: () => import("@/views/schedule/index.vue"),
         },
       ],
     },
@@ -34,17 +34,17 @@ const router = createRouter({
         {
           path: "",
           name: "data",
-          component: () => import("../views/data/index.vue"),
+          component: () => import("@/views/data/index.vue"),
         },
         {
-          path: "racer",
-          name: "racer",
-          component: () => import("../views/data/racer/index.vue"),
+          path: "driver",
+          name: "driver",
+          component: () => import("@/views/data/driver/index.vue"),
         },
         {
           path: "team",
           name: "team",
-          component: () => import("../views/data/team/index.vue"),
+          component: () => import("@/views/data/team/index.vue"),
         },
       ],
     },

@@ -43,6 +43,6 @@ export default defineComponent({
 .img {
   width: 100%;
   height: 200px;
-  background-color: skyblue;
+  background-color: #e10600;
 }
 </style>

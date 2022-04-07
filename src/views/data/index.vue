@@ -1,33 +1,43 @@
 <template>
-  <van-nav-bar title="排行榜" />
+  <van-dropdown-menu>
+    <van-dropdown-item v-model="year" :options="years" />
+  </van-dropdown-menu>
   <van-tabs v-model:active="active">
-    <van-tab title="车队积分">
+    <van-tab title="Team">
       <van-list class="list">
+        <div class="item">
+          <div class="item-position">POS</div>
+          <div class="item-driver">Team</div>
+          <div class="item-points">PTS</div>
+        </div>
         <div
           class="item"
-          v-for="item in list"
-          :key="item.rank"
-          @click="goToInfo('team', item.id)"
+          v-for="item in teams"
+          :key="item.position"
+          @click="goToInfo('team', item.team)"
         >
-          <div class="item-rank">{{ item.rank }}</div>
-          <div class="item-img">{{ item.img }}</div>
-          <div class="item-name">{{ item.name }}</div>
-          <div class="item-score">{{ item.score }}</div>
+          <div class="item-position">{{ item.position }}</div>
+          <div class="item-driver">{{ item.team }}</div>
+          <div class="item-points">{{ item.points }}</div>
         </div>
       </van-list>
     </van-tab>
-    <van-tab title="车手积分">
+    <van-tab title="Driver">
       <van-list class="list">
+        <div class="item">
+          <div class="item-position">POS</div>
+          <div class="item-driver">Driver</div>
+          <div class="item-points">PTS</div>
+        </div>
         <div
           class="item"
-          v-for="item in list"
-          :key="item.rank"
-          @click="goToInfo('racer', item.id)"
+          v-for="item in drivers"
+          :key="item.position"
+          @click="goToInfo('driver', item.driver)"
         >
-          <div class="item-rank">{{ item.rank }}</div>
-          <div class="item-img">{{ item.img }}</div>
-          <div class="item-name">{{ item.name }}</div>
-          <div class="item-score">{{ item.score }}</div>
+          <div class="item-position">{{ item.position }}</div>
+          <div class="item-driver">{{ item.driver }}</div>
+          <div class="item-points">{{ item.points }}</div>
         </div>
       </van-list>
     </van-tab>
@@ -37,21 +47,32 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, toRefs } from "vue";
+import { defineComponent, onBeforeMount, reactive, toRefs, watch } from "vue";
 import { useRouter } from "vue-router";
+import { getDrivers, getTeams } from "@/apis/index";
 
-interface RankListItem {
+interface Drivers {
   id: number;
-  rank: number;
-  img: string;
-  name: string;
-  score: number;
+  position: number;
+  driver: string;
+  points: number;
+}
+
+interface Team {
+  id: number;
+  position: number;
+  team: string;
+  points: number;
 }
 
 interface DataProps {
   active: number;
-  list: Array<RankListItem>;
-  goToInfo: (where: string, item: any) => void;
+  year: number;
+  years: Array<any>;
+  teams: Array<Team>;
+  drivers: Array<Drivers>;
+  goToInfo: (where: string, name: string) => void;
+  getList: () => void;
 }
 
 export default defineComponent({
@@ -59,16 +80,52 @@ export default defineComponent({
   setup() {
     const router = useRouter();
     const data: DataProps = reactive({
-      active: 0,
-      list: [
-        { id: 0, rank: 1, img: "", name: "xxx", score: 3 },
-        { id: 1, rank: 2, img: "", name: "yyy", score: 2 },
-        { id: 2, rank: 3, img: "", name: "zzz", score: 0 },
+      year: 2022,
+      years: [
+        { text: "2022 Standings", value: 2022 },
+        { text: "2021 Standings", value: 2021 },
+        { text: "2020 Standings", value: 2020 },
+        { text: "2019 Standings", value: 2019 },
+        { text: "2018 Standings", value: 2018 },
+        { text: "2017 Standings", value: 2017 },
+        { text: "2016 Standings", value: 2016 },
+        { text: "2015 Standings", value: 2015 },
+        { text: "2014 Standings", value: 2014 },
+        { text: "2013 Standings", value: 2013 },
+        { text: "2012 Standings", value: 2012 },
+        { text: "2011 Standings", value: 2011 },
+        { text: "2010 Standings", value: 2010 },
       ],
-      goToInfo(where: string, id: number) {
-        console.log(where, id);
-        router.push({ path: `/data/${where}`, query: { id: id } });
+      active: 0,
+      teams: [],
+      drivers: [],
+      /**
+       *
+       * @param where
+       * @param name
+       */
+      goToInfo(where: string, name: string) {
+        router.push({ path: `/data/${where}`, query: { name: name } });
       },
+      /**
+       *
+       */
+      async getList() {
+        data.teams = await getTeams(data.year).then((res: any) => res.list);
+        data.drivers = await getDrivers(data.year).then((res: any) => res.list);
+      },
+    });
+
+    watch(
+      () => data.year,
+      async (newVal) => {
+        data.teams = await getTeams(newVal).then((res: any) => res.list);
+        data.drivers = await getDrivers(newVal).then((res: any) => res.list);
+      }
+    );
+
+    onBeforeMount(() => {
+      data.getList();
     });
 
     return {
@@ -88,24 +145,20 @@ export default defineComponent({
   align-items: center;
   padding: 15px 0;
   font-size: 14px;
-  background-color: antiquewhite;
 }
-.item + .item {
-  border-top: 1px solid #fff;
-}
-.item-rank {
+.item-position {
   width: 60px;
 }
 .item-img {
   width: 30px;
   height: 30px;
   border-radius: 15px;
-  background-color: salmon;
+  background-color: #e10600;
 }
-.item-name {
+.item-driver {
   flex: 1;
 }
-.item-score {
+.item-points {
   width: 80px;
 }
 </style>
