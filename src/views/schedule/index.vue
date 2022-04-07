@@ -7,15 +7,8 @@
       v-for="item of schedule"
       :key="item.cardTitle"
     >
-      <van-divider
-        :style="{
-          color: '#e10600',
-          borderColor: '#e10600',
-          margin: '0',
-        }"
-        >{{ item.cardTitle }}</van-divider
-      >
       <div class="list-item--content">
+        <div class="title">{{ item.cardTitle }}</div>
         <div class="list-item--left">
           <van-image class="flag" height="20" :src="item.countryFlagSrc" />
           <div class="date">
@@ -72,15 +65,25 @@ export default defineComponent({
 }
 
 .list-item--content {
+  position: relative;
   display: flex;
   align-items: center;
-  margin: 0 4px 10px 0;
-  padding: 10px;
+  margin: 15px 10px;
+  padding: 15px 10px 10px;
+  border: 1px solid #e10600;
+  border-radius: 10px;
   font-size: 14px;
   text-align: left;
-  border-right: 1px solid #e10600;
-  border-bottom: 1px solid #e10600;
-  border-radius: 0 0 10px 0;
+}
+
+.title {
+  position: absolute;
+  top: -9px;
+  left: 40px;
+  padding: 0 10px;
+  background-color: #fff;
+  color: #e10600;
+  font-size: 16px;
 }
 
 .list-item--left {
@@ -117,7 +120,7 @@ export default defineComponent({
 
   width: 150px;
   height: 100px;
-  margin-left: 15px;
+  margin-left: 10px;
   background: url(@/assets/img/plus.png) 8px repeat;
 }
 </style>
