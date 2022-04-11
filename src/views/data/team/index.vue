@@ -1,7 +1,7 @@
 <template>
   <van-nav-bar
-    :title="title"
-    left-text="返回"
+    title="Team Info"
+    left-text="Back"
     left-arrow
     @click-left="onClickLeft"
   />
@@ -12,7 +12,7 @@ import { defineComponent, onBeforeMount, reactive, toRefs } from "vue";
 import { useRoute } from "vue-router";
 
 interface DataProps {
-  title: string;
+  name: string;
   /**
    *
    */
@@ -24,14 +24,14 @@ export default defineComponent({
   setup() {
     const route = useRoute();
     const data: DataProps = reactive({
-      title: "",
+      name: "",
       onClickLeft() {
         history.back();
       },
     });
 
     onBeforeMount(() => {
-      data.title = route.query.name as string;
+      data.name = route.query.name as string;
     });
 
     return {

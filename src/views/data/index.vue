@@ -3,25 +3,6 @@
     <van-dropdown-item v-model="year" :options="years" />
   </van-dropdown-menu>
   <van-tabs v-model:active="active">
-    <van-tab title="Team">
-      <van-list class="list">
-        <div class="item">
-          <div class="item-position">POS</div>
-          <div class="item-driver">Team</div>
-          <div class="item-points">PTS</div>
-        </div>
-        <div
-          class="item"
-          v-for="item in teams"
-          :key="item.position"
-          @click="goToInfo('team', item.team)"
-        >
-          <div class="item-position">{{ item.position }}</div>
-          <div class="item-driver">{{ item.team }}</div>
-          <div class="item-points">{{ item.points }}</div>
-        </div>
-      </van-list>
-    </van-tab>
     <van-tab title="Driver">
       <van-list class="list">
         <div class="item">
@@ -37,6 +18,25 @@
         >
           <div class="item-position">{{ item.position }}</div>
           <div class="item-driver">{{ item.driver }}</div>
+          <div class="item-points">{{ item.points }}</div>
+        </div>
+      </van-list>
+    </van-tab>
+    <van-tab title="Team">
+      <van-list class="list">
+        <div class="item">
+          <div class="item-position">POS</div>
+          <div class="item-driver">Team</div>
+          <div class="item-points">PTS</div>
+        </div>
+        <div
+          class="item"
+          v-for="item in teams"
+          :key="item.position"
+          @click="goToInfo('team', item.team)"
+        >
+          <div class="item-position">{{ item.position }}</div>
+          <div class="item-driver">{{ item.team }}</div>
           <div class="item-points">{{ item.points }}</div>
         </div>
       </van-list>
