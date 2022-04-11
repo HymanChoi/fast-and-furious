@@ -19,6 +19,7 @@ import {
   DropdownItem,
   Image as VanImage,
   Divider,
+  Lazyload,
 } from "vant";
 
 const app = createApp(App);
@@ -40,5 +41,6 @@ app.use(DropdownMenu);
 app.use(DropdownItem);
 app.use(VanImage);
 app.use(Divider);
+app.use(Lazyload);
 
 app.mount("#app");
