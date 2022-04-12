@@ -1,7 +1,7 @@
 <template>
   <div class="driver">
     <van-nav-bar
-      title="Driver Info"
+      title="Driver Info."
       left-text="Back"
       left-arrow
       @click-left="onClickLeft"
@@ -26,44 +26,50 @@
       </div>
     </div>
     <!-- <van-image height="300" :src="info.photo" /> -->
-    <div class="info">
-      <div class="team">
-        <div class="label">Team</div>
-        <div class="value">{{ info.team }}</div>
-      </div>
-      <div class="podiums">
-        <div class="label">Podiums</div>
-        <div class="value">{{ info.podiums }}</div>
-      </div>
-      <div class="points">
-        <div class="label">Points</div>
-        <div class="value">{{ info.points }}</div>
-      </div>
-      <div class="grandsPrixEntered">
-        <div class="label">Grands Prix Entered</div>
-        <div class="value">{{ info.grandsPrixEntered }}</div>
-      </div>
-      <div class="worldChampionships">
-        <div class="label">World Championships</div>
-        <div class="value">{{ info.worldChampionships }}</div>
-      </div>
-      <div class="highestRaceFinish">
-        <div class="label">Highest Race Finish</div>
-        <div class="value">{{ info.highestRaceFinish }}</div>
-      </div>
-      <div class="highestGridPosition">
-        <div class="label">Highest Grid Position</div>
-        <div class="value">{{ info.highestGridPosition }}</div>
-      </div>
-      <div class="dateOfBirth">
-        <div class="label">Date of Birth</div>
-        <div class="value">{{ info.dateOfBirth }}</div>
-      </div>
-      <div class="placeOfBirth">
-        <div class="label">Place of Birth</div>
-        <div class="value">{{ info.placeOfBirth }}</div>
-      </div>
-    </div>
+    <van-tabs v-model:active="active">
+      <van-tab title="Basic">
+        <div class="info">
+          <div class="team">
+            <div class="label">Team</div>
+            <div class="value">{{ info.team }}</div>
+          </div>
+          <div class="podiums">
+            <div class="label">Podiums</div>
+            <div class="value">{{ info.podiums }}</div>
+          </div>
+          <div class="points">
+            <div class="label">Points</div>
+            <div class="value">{{ info.points }}</div>
+          </div>
+          <div class="grandsPrixEntered">
+            <div class="label">Grands Prix Entered</div>
+            <div class="value">{{ info.grandsPrixEntered }}</div>
+          </div>
+          <div class="worldChampionships">
+            <div class="label">World Championships</div>
+            <div class="value">{{ info.worldChampionships }}</div>
+          </div>
+          <div class="highestRaceFinish">
+            <div class="label">Highest Race Finish</div>
+            <div class="value">{{ info.highestRaceFinish }}</div>
+          </div>
+          <div class="highestGridPosition">
+            <div class="label">Highest Grid Position</div>
+            <div class="value">{{ info.highestGridPosition }}</div>
+          </div>
+          <div class="dateOfBirth">
+            <div class="label">Date of Birth</div>
+            <div class="value">{{ info.dateOfBirth }}</div>
+          </div>
+          <div class="placeOfBirth">
+            <div class="label">Place of Birth</div>
+            <div class="value">{{ info.placeOfBirth }}</div>
+          </div>
+        </div>
+      </van-tab>
+      <van-tab title="Career"></van-tab>
+      <van-tab title="Honor"></van-tab>
+    </van-tabs>
   </div>
 </template>
 
@@ -78,6 +84,7 @@ dayjs.extend(relativeTime);
 interface DataProps {
   name: string;
   info: any;
+  active: number;
   onClickLeft: () => void;
   getAge: (date: string) => string | undefined;
 }
@@ -89,6 +96,7 @@ export default defineComponent({
     const data: DataProps = reactive({
       name: "",
       info: {},
+      active: 0,
       /**
        *
        */
@@ -102,7 +110,6 @@ export default defineComponent({
         if (date) {
           let formatDate = date.split("/").reverse().join("-");
           let age = dayjs(formatDate).fromNow(true).slice(0, -5);
-          console.log(age);
           return age;
         }
       },
