@@ -1,7 +1,5 @@
 :root {
   --f1-brand: #e10600;
-  --f1-green: #e3fad9;
-  --f1-yellow: #fbfdce;
-  --f1-red: #fdddca;
-  --f1-white: #fff;
+
+  --van-primary-color: var(--f1-brand) !important;
 }
