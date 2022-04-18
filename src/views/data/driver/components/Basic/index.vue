@@ -101,20 +101,20 @@ export default defineComponent({
   height: calc(100vh - 420px);
   overflow-y: scroll;
 
-  .info-list__item {
+  &__item {
     display: flex;
     justify-content: space-between;
 
-    .info-list__item-label {
+    &-label {
       width: 50%;
       font-weight: bold;
     }
-    .info-list__item-value {
+    &-value {
       width: 45%;
     }
   }
 
-  .info-list__item + .info-list__item {
+  &__item + &__item {
     margin-top: 15px;
   }
 }

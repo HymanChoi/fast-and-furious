@@ -7,24 +7,27 @@
       v-for="item of schedule"
       :key="item.cardTitle"
     >
-      <div class="list__item__content">
-        <div class="list__item__content-title">{{ item.cardTitle }}</div>
-        <div class="list__item__content-left">
-          <van-image class="flag" height="20" :src="item.countryFlagSrc" />
-          <div class="list__item__place">
-            {{ item.eventPlace }}
-          </div>
-          <div class="list__item__date">
-            <span class="list__item__month">{{ item.month }}</span>
-            <span class="list__item__day">
-              {{ item.startDate }}-{{ item.endDate }}
-            </span>
-          </div>
-          <div class="list__item__desc">{{ item.eventTitle }}</div>
+      <div class="list__item-title">{{ item.cardTitle }}</div>
+      <div class="list__item-left">
+        <van-image
+          class="list__item-flag"
+          height="20"
+          lazy-load
+          :src="item.countryFlagSrc"
+        />
+        <div class="list__item-place">
+          {{ item.eventPlace }}
         </div>
-        <div class="list__item__content-right">
-          <van-image v-if="item.track" height="80" :src="item.track" />
+        <div class="list__item-date">
+          <span class="list__item-month">{{ item.month }}</span>
+          <span class="list__item-day">
+            {{ item.startDate }}-{{ item.endDate }}
+          </span>
         </div>
+        <div class="list__item-desc">{{ item.eventTitle }}</div>
+      </div>
+      <div class="list__item-right">
+        <van-image v-if="item.track" height="80" lazy-load :src="item.track" />
       </div>
     </div>
   </van-list>
@@ -45,7 +48,7 @@ export default defineComponent({
     const data: DataProps = reactive({
       schedule: [],
       async getList() {
-        data.schedule = await getSchedule();
+        data.schedule = await getSchedule().then();
       },
     });
 
@@ -65,18 +68,18 @@ export default defineComponent({
   height: calc(100vh - 96px);
   overflow-y: scroll;
 
-  .list__item__content {
+  &__item {
     position: relative;
     display: flex;
     align-items: center;
     margin: 15px 10px;
     padding: 15px 10px 10px;
-    border: 4px double #000;
+    border: 4px double #2c3e50;
     border-radius: 10px;
     font-size: 14px;
     text-align: left;
 
-    .list__item__content-title {
+    &-title {
       position: absolute;
       top: -11px;
       left: 30px;
@@ -87,34 +90,34 @@ export default defineComponent({
       font-weight: bold;
     }
 
-    .list__item__content-left {
+    &-left {
       position: relative;
       flex: 1;
-
-      .list__item__place {
-        font-size: 18px;
-        margin-bottom: 8px;
-      }
-
-      .flag {
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: 1px solid #eee;
-      }
-
-      .list__item__date {
-        font-weight: bold;
-        font-size: 15px;
-        margin-bottom: 8px;
-      }
-
-      .list__item__month {
-        margin-right: 5px;
-      }
     }
 
-    .list__item__content-right {
+    &-place {
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    &-flag {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 1px solid #eee;
+    }
+
+    &-date {
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    &-month {
+      margin-right: 5px;
+    }
+
+    &-right {
       display: flex;
       justify-content: center;
       align-items: center;

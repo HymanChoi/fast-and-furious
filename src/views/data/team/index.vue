@@ -3,7 +3,7 @@
     title="Team Info"
     left-text="Back"
     left-arrow
-    @click-left="onClickLeft"
+    @click-left="goBack()"
   />
 </template>
 
@@ -16,7 +16,7 @@ interface DataProps {
   /**
    *
    */
-  onClickLeft: () => void;
+  goBack: () => void;
 }
 
 export default defineComponent({
@@ -25,7 +25,7 @@ export default defineComponent({
     const route = useRoute();
     const data: DataProps = reactive({
       name: "",
-      onClickLeft() {
+      goBack() {
         history.back();
       },
     });

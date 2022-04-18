@@ -4,11 +4,19 @@
       :title="info.name"
       left-text="Back"
       left-arrow
-      @click-left="onClickLeft"
+      @click-left="goBack()"
     />
-    <div class="info-board" :style="{ backgroundImage: `url(${info.photo})` }">
-      <div class="info-board__driverNumber">{{ info.driverNumber }}</div>
-      <van-image class="flag" lazy-load width="40" :src="info.icnFlag" />
+    <div
+      class="driver__board"
+      :style="{ backgroundImage: `url(${info.photo})` }"
+    >
+      <div class="driver__board-driverNumber">{{ info.driverNumber }}</div>
+      <van-image
+        class="driver__board-flag"
+        width="40"
+        lazy-load
+        :src="info.icnFlag"
+      />
     </div>
     <van-tabs v-model:active="active">
       <van-tab title="Basic">
@@ -36,7 +44,7 @@ interface DataProps {
   name: string;
   info: any;
   active: number;
-  onClickLeft: () => void;
+  goBack: () => void;
 }
 
 export default defineComponent({
@@ -55,7 +63,7 @@ export default defineComponent({
       /**
        *
        */
-      onClickLeft() {
+      goBack() {
         history.back();
       },
     });
@@ -79,14 +87,14 @@ export default defineComponent({
   font-size: 14px;
   text-align: left;
 
-  .info-board {
+  &__board {
     position: relative;
     height: 240px;
     color: #fff;
     background-size: 100%;
     background-repeat: no-repeat;
 
-    .info-board__driverNumber {
+    &-driverNumber {
       position: absolute;
       top: 20px;
       left: 30px;
@@ -97,7 +105,7 @@ export default defineComponent({
       font-family: "Monoton";
     }
 
-    .flag {
+    &-flag {
       position: absolute;
       top: 30px;
       right: 30px;

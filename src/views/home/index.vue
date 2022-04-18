@@ -1,28 +1,14 @@
-<template>
-  <van-swipe>
-    <van-swipe-item><div class="img"></div></van-swipe-item>
-    <van-swipe-item><div class="img"></div></van-swipe-item>
-    <van-swipe-item><div class="img"></div></van-swipe-item>
-    <van-swipe-item><div class="img"></div></van-swipe-item>
-    <template #indicator="{ active, total }">
-      <div class="custom-indicator">{{ active + 1 }}/{{ total }}</div>
-    </template>
-  </van-swipe>
-</template>
+<template></template>
 
 <script lang="ts">
 import { defineComponent, reactive, toRefs } from "vue";
 
-interface DataProps {
-  active: number;
-}
+interface DataProps {}
 
 export default defineComponent({
   name: "",
   setup() {
-    const data: DataProps = reactive({
-      active: 0,
-    });
+    const data: DataProps = reactive({});
 
     return {
       ...toRefs(data),
@@ -31,18 +17,4 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
-.custom-indicator {
-  position: absolute;
-  right: 5px;
-  bottom: 5px;
-  padding: 2px 5px;
-  font-size: 12px;
-  background: rgba(0, 0, 0, 0.1);
-}
-.img {
-  width: 100%;
-  height: 200px;
-  background-color: #e10600;
-}
-</style>
+<style lang="scss" scoped></style>

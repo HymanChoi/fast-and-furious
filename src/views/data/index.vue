@@ -5,39 +5,39 @@
   <van-tabs v-model:active="active">
     <van-tab title="Driver">
       <van-list class="list">
-        <div class="item">
-          <div class="item-position">POS</div>
-          <div class="item-driver">Driver</div>
-          <div class="item-points">PTS</div>
+        <div class="list__item">
+          <div class="list__item-position">POS</div>
+          <div class="list__item-driver">Driver</div>
+          <div class="list__item-points">PTS</div>
         </div>
         <div
-          class="item"
+          class="list__item"
           v-for="item in drivers"
           :key="item.position"
           @click="goToInfo('driver', item.driver)"
         >
-          <div class="item-position">{{ item.position }}</div>
-          <div class="item-driver">{{ item.driver }}</div>
-          <div class="item-points">{{ item.points }}</div>
+          <div class="list__item-position">{{ item.position }}</div>
+          <div class="list__item-driver">{{ item.driver }}</div>
+          <div class="list__item-points">{{ item.points }}</div>
         </div>
       </van-list>
     </van-tab>
     <van-tab title="Team">
       <van-list class="list">
-        <div class="item">
-          <div class="item-position">POS</div>
-          <div class="item-driver">Team</div>
-          <div class="item-points">PTS</div>
+        <div class="list__item">
+          <div class="list__item-position">POS</div>
+          <div class="list__item-driver">Team</div>
+          <div class="list__item-points">PTS</div>
         </div>
         <div
-          class="item"
+          class="list__item"
           v-for="item in teams"
           :key="item.position"
           @click="goToInfo('team', item.team)"
         >
-          <div class="item-position">{{ item.position }}</div>
-          <div class="item-driver">{{ item.team }}</div>
-          <div class="item-points">{{ item.points }}</div>
+          <div class="list__item-position">{{ item.position }}</div>
+          <div class="list__item-driver">{{ item.team }}</div>
+          <div class="list__item-points">{{ item.points }}</div>
         </div>
       </van-list>
     </van-tab>
@@ -135,30 +135,31 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .list {
   height: calc(100vh - 140px);
   overflow-y: scroll;
-}
-.item {
-  display: flex;
-  align-items: center;
-  padding: 15px 0;
-  font-size: 14px;
-}
-.item-position {
-  width: 60px;
-}
-.item-img {
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #e10600;
-}
-.item-driver {
-  flex: 1;
-}
-.item-points {
-  width: 80px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    font-size: 14px;
+
+    &-position {
+      width: 60px;
+      text-align: center;
+    }
+
+    &-driver {
+      flex: 1;
+      text-align: center;
+    }
+
+    &-points {
+      width: 80px;
+      text-align: center;
+    }
+  }
 }
 </style>
