@@ -35,7 +35,7 @@
 <script lang="ts">
 import { defineComponent, onBeforeMount, reactive, toRefs } from "vue";
 import { useRoute } from "vue-router";
-import { getDriver } from "@/apis/index";
+import { getDriver, getDriver2 } from "@/apis/index";
 import Basic from "./components/Basic/index.vue";
 import Career from "./components/Career/index.vue";
 import Honor from "./components/Honor/index.vue";
@@ -59,7 +59,7 @@ export default defineComponent({
     const data: DataProps = reactive({
       name: "",
       info: {},
-      active: 0,
+      active: 1,
       /**
        *
        */
@@ -70,9 +70,14 @@ export default defineComponent({
 
     onBeforeMount(async () => {
       data.name = route.query.name as string;
-      data.info = await getDriver({ name: data.name }).then(
+      const info = await getDriver({ name: data.name }).then(
         (res: any) => res[0]
       );
+      const info2 = await getDriver2({ name: data.name }).then(
+        (res: any) => res[0]
+      );
+      data.info = Object.assign(info, info2);
+      console.log(data.info);
     });
 
     return {

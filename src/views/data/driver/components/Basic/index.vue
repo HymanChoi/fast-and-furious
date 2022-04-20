@@ -2,9 +2,7 @@
   <div class="info-list">
     <div class="info-list__item">
       <div class="info-list__item-label">Age</div>
-      <div class="info-list__item-value">
-        {{ getAge(info.dateOfBirth) }}
-      </div>
+      <div class="info-list__item-value">{{ info.age }}</div>
     </div>
     <div class="info-list__item">
       <div class="info-list__item-label">Date of Birth</div>
@@ -59,13 +57,8 @@
 
 <script lang="ts">
 import { defineComponent, reactive, toRefs } from "vue";
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime";
-dayjs.extend(relativeTime);
 
-interface DataProps {
-  getAge: (date: string) => string | undefined;
-}
+interface DataProps {}
 
 export default defineComponent({
   name: "Basic",
@@ -73,18 +66,7 @@ export default defineComponent({
     info: Object,
   },
   setup() {
-    const data: DataProps = reactive({
-      /**
-       *
-       */
-      getAge(date: string) {
-        if (date) {
-          let formatDate = date.split("/").reverse().join("-");
-          let age = dayjs(formatDate).fromNow(true).slice(0, -6);
-          return age;
-        }
-      },
-    });
+    const data: DataProps = reactive({});
 
     return {
       ...toRefs(data),

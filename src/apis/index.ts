@@ -24,6 +24,17 @@ export function getDriver(params: any) {
 /**
  *
  */
+export function getDriver2(params: any) {
+  return service.request({
+    url: "/mock/driver2",
+    method: "get",
+    params,
+  });
+}
+
+/**
+ *
+ */
 export function getTeams(year: number) {
   return service.request({
     url: `/mock/teams/${year}`,
