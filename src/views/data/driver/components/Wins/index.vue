@@ -2,12 +2,14 @@
   <div class="list">
     <div
       class="list__item"
-      :class="getClassName(item.team)"
-      v-for="item in info.teams"
+      :class="getClassName(item.constructor)"
+      v-for="item in info.winsList"
       :key="item.season + 'teams'"
     >
-      <div class="list__item-team">{{ item.team }}</div>
-      <div class="list__item-season">{{ item.season }}</div>
+      <div class="list__item-id">{{ item.id }}</div>
+      <div class="list__item-event">{{ item.event }}</div>
+      <div class="list__item-round">{{ item.round }}</div>
+      <div class="list__item-constructor">{{ item.constructor }}</div>
     </div>
   </div>
 </template>
@@ -16,7 +18,7 @@
 import { defineComponent, reactive, toRefs } from "vue";
 
 export default defineComponent({
-  name: "Career",
+  name: "Wins",
   props: {
     info: {
       type: Object,
@@ -25,11 +27,6 @@ export default defineComponent({
   },
   setup() {
     const data = reactive({
-      active: 0,
-      /**
-       *
-       * @param team
-       */
       getClassName(team: string) {
         return `list__item_${team.replace(/\s/g, "")}`;
       },
@@ -53,7 +50,7 @@ export default defineComponent({
   &__item {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 10px 5px;
     font-size: 12px;
     background-color: #fff;
     border: 4px double;
@@ -65,10 +62,24 @@ export default defineComponent({
     margin-top: 10px;
   }
 
-  &__item-season {
+  &__item-id {
+    width: 20px;
+    text-align: center;
   }
 
-  &__item-team {
+  &__item-event {
+    flex: 1;
+    text-align: center;
+  }
+
+  &__item-round {
+    width: 50px;
+    text-align: center;
+  }
+
+  &__item-constructor {
+    width: 90px;
+    text-align: center;
   }
 }
 </style>

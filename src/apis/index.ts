@@ -1,53 +1,47 @@
 import service from "@/utils/axios";
 
 /**
+ * 获取车手排名
  *
+ * @param year
+ * @returns
  */
-export function getDrivers(year: number) {
+export function getDriverStandings(year: number) {
   return service.request({
-    url: `/mock/drivers/${year}`,
+    url: `/mock/api/standings/driver/${year}`,
     method: "get",
   });
 }
 
 /**
+ * 获取车队排名
  *
+ * @param year
+ * @returns
  */
-export function getDriver(params: any) {
+export function getTeamStandings(year: number) {
   return service.request({
-    url: "/mock/driver",
-    method: "get",
-    params,
-  });
-}
-
-/**
- *
- */
-export function getDriver2(params: any) {
-  return service.request({
-    url: "/mock/driver2",
-    method: "get",
-    params,
-  });
-}
-
-/**
- *
- */
-export function getTeams(year: number) {
-  return service.request({
-    url: `/mock/teams/${year}`,
+    url: `/mock/api/standings/team/${year}`,
     method: "get",
   });
 }
 
 /**
- *
+ * 获取车手详情
+ */
+export function getDrivers(name: string) {
+  return service.request({
+    url: `/mock/api/drivers/${name}`,
+    method: "get",
+  });
+}
+
+/**
+ * 获取赛程
  */
 export function getSchedule() {
   return service.request({
-    url: "/mock/schedule",
+    url: "/mock/api/schedule",
     method: "get",
   });
 }

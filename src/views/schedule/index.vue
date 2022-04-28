@@ -1,33 +1,35 @@
 <template>
   <van-nav-bar title="Schedule" />
   <van-list class="list">
-    <div
-      class="list__item"
-      :style="{ backgroundColor: item.bgc }"
-      v-for="item of schedule"
-      :key="item.cardTitle"
-    >
-      <div class="list__item-title">{{ item.cardTitle }}</div>
-      <div class="list__item-left">
-        <van-image
-          class="list__item-flag"
-          height="20"
-          lazy-load
-          :src="item.countryFlagSrc"
-        />
-        <div class="list__item-place">
-          {{ item.eventPlace }}
+    <div v-for="item of schedule" :key="item.cardTitle">
+      <div class="list__item" :style="{ backgroundColor: item.bgc }">
+        <div class="list__item-title">{{ item.cardTitle }}</div>
+        <div class="list__item-left">
+          <van-image
+            class="list__item-flag"
+            height="20"
+            lazy-load
+            :src="item.countryFlagSrc"
+          />
+          <div class="list__item-date">
+            <span class="list__item-month">{{ item.month }}</span>
+            <span class="list__item-day">
+              {{ item.startDate }}-{{ item.endDate }}
+            </span>
+          </div>
+          <div class="list__item-place">
+            {{ item.eventPlace }}
+          </div>
+          <div class="list__item-desc">{{ item.eventTitle }}</div>
         </div>
-        <div class="list__item-date">
-          <span class="list__item-month">{{ item.month }}</span>
-          <span class="list__item-day">
-            {{ item.startDate }}-{{ item.endDate }}
-          </span>
+        <div class="list__item-right">
+          <van-image
+            v-if="item.track"
+            height="80"
+            lazy-load
+            :src="item.track"
+          />
         </div>
-        <div class="list__item-desc">{{ item.eventTitle }}</div>
-      </div>
-      <div class="list__item-right">
-        <van-image v-if="item.track" height="80" lazy-load :src="item.track" />
       </div>
     </div>
   </van-list>
@@ -71,32 +73,37 @@ export default defineComponent({
   &__item {
     position: relative;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin: 15px 10px;
-    padding: 15px 10px 10px;
-    border: 4px double #2c3e50;
-    border-radius: 10px;
+    margin: 30px 15px;
+    padding: 20px 15px 15px;
+    border-radius: 4px;
     font-size: 14px;
-    text-align: left;
+    box-shadow: $box-shadow;
+    background-color: #fff;
 
     &-title {
       position: absolute;
-      top: -11px;
-      left: 30px;
-      padding: 0 10px;
+      top: -14px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      text-align: center;
+      width: 140px;
+      height: 28px;
+      line-height: 28px;
+      border-radius: 14px 14px 0 0;
       background-color: #fff;
-      color: #e10600;
-      font-size: 16px;
-      font-weight: bold;
+      box-shadow: 0 -0.5px rgba(0, 0, 0, 0.12);
     }
 
     &-left {
       position: relative;
-      flex: 1;
+      width: 150px;
     }
 
     &-place {
-      font-size: 18px;
+      font-size: 16px;
       margin-bottom: 8px;
     }
 
@@ -108,13 +115,17 @@ export default defineComponent({
     }
 
     &-date {
-      font-weight: bold;
-      font-size: 15px;
       margin-bottom: 8px;
+      color: $f1-red;
     }
 
     &-month {
       margin-right: 5px;
+    }
+
+    &-desc {
+      font-size: 13px;
+      color: #969799;
     }
 
     &-right {
@@ -123,7 +134,6 @@ export default defineComponent({
       align-items: center;
       width: 150px;
       height: 100px;
-      margin-left: 10px;
       background: url(@/assets/img/plus.png) 8px repeat;
     }
   }

@@ -21,6 +21,8 @@ import {
   Image as VanImage,
   Divider,
   Lazyload,
+  Circle,
+  Icon,
 } from "vant";
 
 const app = createApp(App);
@@ -43,5 +45,7 @@ app.use(DropdownItem);
 app.use(VanImage);
 app.use(Divider);
 app.use(Lazyload);
+app.use(Circle);
+app.use(Icon);
 
 app.mount("#app");
