@@ -4,3 +4,10 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "RobotoSlab";
+  src: url("./RobotoSlab-Regular");
+  font-weight: normal;
+  font-style: normal;
+}

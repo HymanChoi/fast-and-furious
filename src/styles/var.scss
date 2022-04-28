@@ -1,4 +1,6 @@
 $f1-red: #e10600;
+$box-shadow:0 2px 4px rgba(0, 0, 0, 0.12),
+0 0 6px rgba(0, 0, 0, 0.04);
 
 $Ferrari:#f91536;
 $Mercedes:#6cd3bf;
@@ -16,4 +18,105 @@ $ToroRosso:#0132aa;
 $ManorMarussia:#f76137;
 $HRT:#e5dfe0;
 $ForceIndia:#efacce;
-$BMWSauber:#ffffff;
+$BMWSauber:#fff;
+
+.list{
+    &__item_Ferrari {
+        color: $Ferrari;
+        
+    }
+    
+    &__item_Mercedes {
+        color: $Mercedes;
+        
+    }
+    
+    &__item_RedBull {
+        color: $RedBull;
+        
+    }
+    
+    &__item_McLaren {
+        color: $McLaren;
+        
+    }
+    
+    &__item_AlpineF1Team {
+        color: $AlpineF1Team;
+        
+    }
+    
+    &__item_AlfaRomeo {
+        color: $AlfaRomeo;
+        
+    }
+    
+    &__item_HaasF1Team {
+        color: $HaasF1Team;
+        
+    }
+    
+    &__item_AlphaTauri {
+        color: $AlphaTauri;
+        
+    }
+    
+    &__item_Williams {
+        color: $Williams;
+        
+    }
+    
+    &__item_AstonMartin {
+        color: $AstonMartin;
+        
+    }
+    
+    &__item_Sauber {
+        color: $Sauber;
+        
+    }
+    
+    &__item_Renault {
+        color: $Renault;
+    }
+    
+    &__item_ToroRosso {
+        color: $ToroRosso;
+        
+    }
+    
+    &__item_ManorMarussia {
+        color: $ManorMarussia;
+        
+    }
+    
+    &__item_HRT {
+        color: #000;
+    }
+    
+    &__item_ForceIndia,
+    &__item_RacingPoint {
+        color: $ForceIndia;
+        
+    }
+    
+    &__item_BMWSauber {
+        color: #000;
+    }
+}
+
+/* 单行省略 */
+.slo {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 多行省略 */
+.mlo {
+    display: -webkit-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
