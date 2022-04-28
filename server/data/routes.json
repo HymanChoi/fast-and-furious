@@ -1,0 +1,5 @@
+{
+  "/api/*": "/$1",
+  "/standings/*": "/standings.$1",
+  "/drivers/:name": "/drivers?name=:name&_embed=seasonInfo"
+}
