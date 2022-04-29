@@ -1,122 +1,116 @@
 $f1-red: #e10600;
-$box-shadow:0 2px 4px rgba(0, 0, 0, 0.12),
-0 0 6px rgba(0, 0, 0, 0.04);
+$box-shadow: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
 
-$Ferrari:#f91536;
-$Mercedes:#6cd3bf;
-$RedBull:#3671c6;
-$McLaren:#f58020;
-$AlpineF1Team:#2293d1;
-$AlfaRomeo:#c92d4b;
-$HaasF1Team:#b6babd;
-$AlphaTauri:#5e8faa;
-$Williams:#37bedd;
-$AstonMartin:#358c75;
-$Sauber:#002777;
-$Renault:#fed73a;
-$ToroRosso:#0132aa;
-$ManorMarussia:#f76137;
-$HRT:#e5dfe0;
-$ForceIndia:#efacce;
-$BMWSauber:#fff;
+$Ferrari: #f91536;
+$Mercedes: #6cd3bf;
+$RedBull: #3671c6;
+$McLaren: #f58020;
+$AlpineF1Team: #2293d1;
+$AlfaRomeo: #c92d4b;
+$HaasF1Team: #b6babd;
+$AlphaTauri: #5e8faa;
+$Williams: #37bedd;
+$AstonMartin: #358c75;
+$Sauber: #002777;
+$Renault: #fed73a;
+$ToroRosso: #0132aa;
+$ManorMarussia: #f76137;
+$HRT: #e5dfe0;
+$ForceIndia: #efacce;
+$BMWSauber: #fff;
 
-.list{
-    &__item_Ferrari {
-        color: $Ferrari;
-        
-    }
-    
-    &__item_Mercedes {
-        color: $Mercedes;
-        
-    }
-    
-    &__item_RedBull {
-        color: $RedBull;
-        
-    }
-    
-    &__item_McLaren {
-        color: $McLaren;
-        
-    }
-    
-    &__item_AlpineF1Team {
-        color: $AlpineF1Team;
-        
-    }
-    
-    &__item_AlfaRomeo {
-        color: $AlfaRomeo;
-        
-    }
-    
-    &__item_HaasF1Team {
-        color: $HaasF1Team;
-        
-    }
-    
-    &__item_AlphaTauri {
-        color: $AlphaTauri;
-        
-    }
-    
-    &__item_Williams {
-        color: $Williams;
-        
-    }
-    
-    &__item_AstonMartin {
-        color: $AstonMartin;
-        
-    }
-    
-    &__item_Sauber {
-        color: $Sauber;
-        
-    }
-    
-    &__item_Renault {
-        color: $Renault;
-    }
-    
-    &__item_ToroRosso {
-        color: $ToroRosso;
-        
-    }
-    
-    &__item_ManorMarussia {
-        color: $ManorMarussia;
-        
-    }
-    
-    &__item_HRT {
-        color: #000;
-    }
-    
-    &__item_ForceIndia,
-    &__item_RacingPoint {
-        color: $ForceIndia;
-        
-    }
-    
-    &__item_BMWSauber {
-        color: #000;
-    }
+.list {
+  &__item_Ferrari {
+    background-color: rgba($color: $Ferrari, $alpha: 0.15);
+  }
+
+  &__item_Mercedes {
+    background-color: rgba($color: $Mercedes, $alpha: 0.15);
+  }
+
+  &__item_RedBull {
+    background-color: rgba($color: $RedBull, $alpha: 0.15);
+  }
+
+  &__item_McLaren {
+    background-color: rgba($color: $McLaren, $alpha: 0.15);
+  }
+
+  &__item_AlpineF1Team {
+    background-color: rgba($color: $AlpineF1Team, $alpha: 0.15);
+  }
+
+  &__item_AlfaRomeo {
+    background-color: rgba($color: $AlfaRomeo, $alpha: 0.15);
+  }
+
+  &__item_HaasF1Team {
+    background-color: rgba($color: $HaasF1Team, $alpha: 0.15);
+  }
+
+  &__item_AlphaTauri {
+    background-color: rgba($color: $AlphaTauri, $alpha: 0.15);
+  }
+
+  &__item_Williams {
+    background-color: rgba($color: $Williams, $alpha: 0.15);
+  }
+
+  &__item_AstonMartin {
+    background-color: rgba($color: $AstonMartin, $alpha: 0.15);
+  }
+
+  &__item_Sauber {
+    background-color: rgba($color: $Sauber, $alpha: 0.15);
+  }
+
+  &__item_Renault {
+    background-color: rgba($color: $Renault, $alpha: 0.15);
+  }
+
+  &__item_ToroRosso {
+    background-color: rgba($color: $ToroRosso, $alpha: 0.15);
+  }
+
+  &__item_ManorMarussia {
+    background-color: rgba($color: $ManorMarussia, $alpha: 0.15);
+  }
+
+  &__item_HRT {
+    background-color: rgba($color: #000, $alpha: 0.15);
+  }
+
+  &__item_ForceIndia,
+  &__item_RacingPoint {
+    background-color: rgba($color: $ForceIndia, $alpha: 0.15);
+  }
+
+  &__item_BMWSauber {
+    background-color: rgba($color: #000, $alpha: 0.15);
+  }
 }
 
 /* 单行省略 */
 .slo {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-/* 多行省略 */
-.mlo {
-    display: -webkit-box;
-    overflow: hidden;
-    word-wrap: break-word;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+/* 两行省略 */
+.twolo {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* 三行省略 */
+.threelo {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
