@@ -12,51 +12,20 @@
         {{ tab }}
       </div>
     </div>
-    <div v-show="activeTab === 'News'" class="list">
-      <div
-        class="list__item"
-        v-for="(item, index) of list"
-        :key="index + 'list'"
-      >
-        <van-image
-          lazy-load
-          width="160"
-          height="100"
-          fit="cover"
-          position="center"
-          :show-loading="false"
-          :show-error="false"
-          :src="item.cover"
-        />
-        <div class="list__item-text">
-          <div class="tag">{{ item.tag }}</div>
-          <div class="title mlo">{{ item.title }}</div>
-        </div>
-      </div>
-    </div>
-    <div v-show="activeTab === 'Video'" class="news-list">
-      <div
-        class="news-list__item"
-        v-for="(item, index) of list"
-        :key="index + 'list'"
-      >
-        <van-image
-          class="news-list__item-cover"
-          lazy-load
-          fit="cover"
-          height="200"
-          :show-loading="false"
-          :show-error="false"
-          :src="item.cover"
-        />
-        <div class="news-list__item-mask">{{ item.title }}</div>
-      </div>
-    </div>
+
+    <News v-show="activeTab === 'News'" :list="list" />
+    <Technical v-show="activeTab === 'Technical'" :list="list" />
+    <Podcast v-show="activeTab === 'Podcast'" :list="list" />
+    <Video v-show="activeTab === 'Video'" :list="list" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, reactive, toRefs } from "vue";
+import News from "./components/News/index.vue";
+import Technical from "./components/Technical/index.vue";
+import Podcast from "./components/Podcast/index.vue";
+import Video from "./components/Video/index.vue";
 
 interface DataProps {
   activeTab: string;
@@ -67,9 +36,15 @@ interface DataProps {
 
 export default defineComponent({
   name: "",
+  components: {
+    News,
+    Technical,
+    Podcast,
+    Video,
+  },
   setup() {
     const data: DataProps = reactive({
-      activeTab: "News",
+      activeTab: "Podcast",
       tabs: ["News", "Technical", "Podcast", "Video", "Interview", "Feature"],
       list: [
         {
@@ -159,76 +134,5 @@ export default defineComponent({
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-.list {
-  height: calc(100vh - 170px);
-  overflow: auto;
-  padding-bottom: 15px;
-
-  &__item {
-    display: flex;
-    align-items: center;
-    margin: 0 15px;
-    background-color: #fff;
-    border-radius: 4px;
-    overflow: hidden;
-    box-shadow: $box-shadow;
-
-    &-text {
-      display: flex;
-      flex-direction: column;
-      width: 160px;
-      padding: 0 15px;
-
-      .tag {
-        color: $f1-red;
-        font-size: 12px;
-      }
-
-      .title {
-        margin-top: 10px;
-        font-size: 14px;
-      }
-    }
-  }
-
-  &__item + &__item {
-    margin-top: 15px;
-  }
-}
-
-.news-list {
-  height: calc(100vh - 170px);
-  overflow: auto;
-  padding-bottom: 15px;
-
-  &__item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin: 0 15px;
-    overflow: hidden;
-    border-radius: 4px;
-    box-shadow: $box-shadow;
-
-    &-title {
-      padding: 15px;
-    }
-
-    &-mask {
-      position: absolute;
-      bottom: 0;
-      font-size: 14px;
-      line-height: 20px;
-      padding: 6px 12px;
-      color: #fff;
-      background-color: rgba($color: #000000, $alpha: 0.6);
-    }
-  }
-
-  &__item + &__item {
-    margin-top: 15px;
-  }
 }
 </style>
