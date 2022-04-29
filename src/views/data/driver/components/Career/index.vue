@@ -53,22 +53,14 @@ export default defineComponent({
   &__item {
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    font-size: 12px;
-    background-color: #fff;
-    border: 4px double;
+    padding: 12px 15px;
+    font-size: 13px;
     border-radius: 4px;
     box-shadow: $box-shadow;
   }
 
   &__item + &__item {
     margin-top: 10px;
-  }
-
-  &__item-season {
-  }
-
-  &__item-team {
   }
 }
 </style>

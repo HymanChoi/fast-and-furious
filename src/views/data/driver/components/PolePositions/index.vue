@@ -50,10 +50,8 @@ export default defineComponent({
   &__item {
     display: flex;
     justify-content: space-between;
-    padding: 10px 5px;
+    padding: 12px 5px;
     font-size: 12px;
-    background-color: #fff;
-    border: 4px double;
     border-radius: 4px;
     box-shadow: $box-shadow;
   }
