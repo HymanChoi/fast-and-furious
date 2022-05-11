@@ -17,6 +17,11 @@ const router = createRouter({
       ],
     },
     {
+      path: "/detail",
+      name: "detail",
+      component: () => import("@/views/home/detail/index.vue"),
+    },
+    {
       path: "/schedule",
       component: Layout,
       children: [
@@ -36,17 +41,17 @@ const router = createRouter({
           name: "data",
           component: () => import("@/views/data/index.vue"),
         },
-        {
-          path: "driver",
-          name: "driver",
-          component: () => import("@/views/data/driver/index.vue"),
-        },
-        {
-          path: "team",
-          name: "team",
-          component: () => import("@/views/data/team/index.vue"),
-        },
       ],
+    },
+    {
+      path: "/data/driver",
+      name: "driver",
+      component: () => import("@/views/data/driver/index.vue"),
+    },
+    {
+      path: "/data/team",
+      name: "team",
+      component: () => import("@/views/data/team/index.vue"),
     },
   ],
 });

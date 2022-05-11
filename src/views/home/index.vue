@@ -44,7 +44,7 @@ export default defineComponent({
   },
   setup() {
     const data: DataProps = reactive({
-      activeTab: "Podcast",
+      activeTab: "News",
       tabs: ["News", "Technical", "Podcast", "Video", "Interview", "Feature"],
       list: [
         {

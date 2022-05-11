@@ -1,6 +1,11 @@
 <template>
   <div class="list">
-    <div class="list__item" v-for="(item, index) of list" :key="index + 'list'">
+    <div
+      class="list__item"
+      v-for="(item, index) of list"
+      :key="index + 'list'"
+      @click="goToDetail(item)"
+    >
       <van-image
         lazy-load
         width="160"
@@ -19,6 +24,7 @@
 
 <script lang="ts">
 import { defineComponent, PropType, reactive, toRefs } from "vue";
+import { useRouter } from "vue-router";
 
 export default defineComponent({
   name: "News",
@@ -29,7 +35,12 @@ export default defineComponent({
     },
   },
   setup() {
-    const data = reactive({});
+    const router = useRouter();
+    const data = reactive({
+      goToDetail(item: any) {
+        router.push({ path: "/detail", query: { item: item } });
+      },
+    });
 
     return {
       ...toRefs(data),
