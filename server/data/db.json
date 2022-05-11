@@ -250,7 +250,7 @@
         },
         {
           "position": "2",
-          "team": "McLaren Mercedes",
+          "team": "McLaren",
           "points": "454"
         },
         {
@@ -315,7 +315,7 @@
         },
         {
           "position": "2",
-          "team": "McLaren Mercedes",
+          "team": "McLaren",
           "points": "497"
         },
         {
@@ -385,7 +385,7 @@
         },
         {
           "position": "3",
-          "team": "McLaren Mercedes",
+          "team": "McLaren",
           "points": "378"
         },
         {
@@ -460,7 +460,7 @@
         },
         {
           "position": "5",
-          "team": "McLaren Mercedes",
+          "team": "McLaren",
           "points": "122"
         },
         {
@@ -510,7 +510,7 @@
         },
         {
           "position": "3",
-          "team": "Williams Mercedes",
+          "team": "Williams",
           "points": "320"
         },
         {
@@ -520,7 +520,7 @@
         },
         {
           "position": "5",
-          "team": "McLaren Mercedes",
+          "team": "McLaren",
           "points": "181"
         },
         {
@@ -570,7 +570,7 @@
         },
         {
           "position": "3",
-          "team": "Williams Mercedes",
+          "team": "Williams",
           "points": "257"
         },
         {
@@ -635,7 +635,7 @@
         },
         {
           "position": "5",
-          "team": "Williams Mercedes",
+          "team": "Williams",
           "points": "138"
         },
         {
@@ -650,7 +650,7 @@
         },
         {
           "position": "8",
-          "team": "Haas Ferrari",
+          "team": "Haas F1 Team",
           "points": "29"
         },
         {
@@ -695,7 +695,7 @@
         },
         {
           "position": "5",
-          "team": "Williams Mercedes",
+          "team": "Williams",
           "points": "83"
         },
         {
@@ -710,7 +710,7 @@
         },
         {
           "position": "8",
-          "team": "Haas Ferrari",
+          "team": "Haas F1 Team",
           "points": "47"
         },
         {
@@ -750,7 +750,7 @@
         },
         {
           "position": "5",
-          "team": "Haas Ferrari",
+          "team": "Haas F1 Team",
           "points": "93"
         },
         {
@@ -775,7 +775,7 @@
         },
         {
           "position": "10",
-          "team": "Williams Mercedes",
+          "team": "Williams",
           "points": "7"
         },
         {
@@ -830,12 +830,12 @@
         },
         {
           "position": "9",
-          "team": "Haas Ferrari",
+          "team": "Haas F1 Team",
           "points": "28"
         },
         {
           "position": "10",
-          "team": "Williams Mercedes",
+          "team": "Williams",
           "points": "1"
         }
       ]
@@ -885,12 +885,12 @@
         },
         {
           "position": "9",
-          "team": "Haas Ferrari",
+          "team": "Haas F1 Team",
           "points": "3"
         },
         {
           "position": "10",
-          "team": "Williams Mercedes",
+          "team": "Williams",
           "points": "0"
         }
       ]
@@ -915,12 +915,12 @@
         },
         {
           "position": "4",
-          "team": "McLaren Mercedes",
+          "team": "McLaren",
           "points": "275"
         },
         {
           "position": "5",
-          "team": "Alpine Renault",
+          "team": "Alpine",
           "points": "155"
         },
         {
@@ -935,7 +935,7 @@
         },
         {
           "position": "8",
-          "team": "Williams Mercedes",
+          "team": "Williams",
           "points": "23"
         },
         {
@@ -945,7 +945,7 @@
         },
         {
           "position": "10",
-          "team": "Haas Ferrari",
+          "team": "Haas F1 Team",
           "points": "0"
         }
       ]
@@ -960,7 +960,7 @@
         },
         {
           "position": "2",
-          "team": "Red Bull Racing RBPT",
+          "team": "Red Bull Racing",
           "points": "113"
         },
         {
@@ -970,37 +970,37 @@
         },
         {
           "position": "4",
-          "team": "McLaren Mercedes",
+          "team": "McLaren",
           "points": "46"
         },
         {
           "position": "5",
-          "team": "Alfa Romeo Ferrari",
+          "team": "Alfa Romeo Racing",
           "points": "25"
         },
         {
           "position": "6",
-          "team": "Alpine Renault",
+          "team": "Alpine",
           "points": "22"
         },
         {
           "position": "7",
-          "team": "AlphaTauri RBPT",
+          "team": "AlphaTauri",
           "points": "16"
         },
         {
           "position": "8",
-          "team": "Haas Ferrari",
+          "team": "Haas F1 Team",
           "points": "15"
         },
         {
           "position": "9",
-          "team": "Aston Martin Aramco Mercedes",
+          "team": "Aston Martin",
           "points": "5"
         },
         {
           "position": "10",
-          "team": "Williams Mercedes",
+          "team": "Williams",
           "points": "1"
         }
       ]
@@ -1035,14 +1035,14 @@
           "position": "4",
           "driver": "Lewis Hamilton",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "240"
         },
         {
           "position": "5",
           "driver": "Jenson Button",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "214"
         },
         {
@@ -1215,7 +1215,7 @@
           "position": "2",
           "driver": "Jenson Button",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "270"
         },
         {
@@ -1236,7 +1236,7 @@
           "position": "5",
           "driver": "Lewis Hamilton",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "227"
         },
         {
@@ -1430,14 +1430,14 @@
           "position": "4",
           "driver": "Lewis Hamilton",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "190"
         },
         {
           "position": "5",
           "driver": "Jenson Button",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "188"
         },
         {
@@ -1645,7 +1645,7 @@
           "position": "9",
           "driver": "Jenson Button",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "73"
         },
         {
@@ -1659,7 +1659,7 @@
           "position": "11",
           "driver": "Sergio Pérez",
           "nationality": "MEX",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "49"
         },
         {
@@ -1776,7 +1776,7 @@
           "position": "4",
           "driver": "Valtteri  Bottas",
           "nationality": "FIN",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "186"
         },
         {
@@ -1797,14 +1797,14 @@
           "position": "7",
           "driver": "Felipe Massa",
           "nationality": "BRA",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "134"
         },
         {
           "position": "8",
           "driver": "Jenson Button",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "126"
         },
         {
@@ -1825,7 +1825,7 @@
           "position": "11",
           "driver": "Kevin Magnussen",
           "nationality": "DEN",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "55"
         },
         {
@@ -1949,14 +1949,14 @@
           "position": "5",
           "driver": "Valtteri  Bottas",
           "nationality": "FIN",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "136"
         },
         {
           "position": "6",
           "driver": "Felipe Massa",
           "nationality": "BRA",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "121"
         },
         {
@@ -2122,7 +2122,7 @@
           "position": "8",
           "driver": "Valtteri  Bottas",
           "nationality": "FIN",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "85"
         },
         {
@@ -2143,7 +2143,7 @@
           "position": "11",
           "driver": "Felipe Massa",
           "nationality": "BRA",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "53"
         },
         {
@@ -2157,7 +2157,7 @@
           "position": "13",
           "driver": "Romain Grosjean",
           "nationality": "FRA",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "29"
         },
         {
@@ -2213,7 +2213,7 @@
           "position": "21",
           "driver": "Esteban Gutierrez ",
           "nationality": "MEX",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "0"
         },
         {
@@ -2316,28 +2316,28 @@
           "position": "11",
           "driver": "Felipe Massa",
           "nationality": "BRA",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "43"
         },
         {
           "position": "12",
           "driver": "Lance Stroll",
           "nationality": "CAN",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "40"
         },
         {
           "position": "13",
           "driver": "Romain Grosjean",
           "nationality": "FRA",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "28"
         },
         {
           "position": "14",
           "driver": "Kevin Magnussen",
           "nationality": "DEN",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "19"
         },
         {
@@ -2468,7 +2468,7 @@
           "position": "9",
           "driver": "Kevin Magnussen",
           "nationality": "DEN",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "56"
         },
         {
@@ -2503,7 +2503,7 @@
           "position": "14",
           "driver": "Romain Grosjean",
           "nationality": "FRA",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "37"
         },
         {
@@ -2531,7 +2531,7 @@
           "position": "18",
           "driver": "Lance Stroll",
           "nationality": "CAN",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "6"
         },
         {
@@ -2545,7 +2545,7 @@
           "position": "20",
           "driver": "Sergey Sirotkin",
           "nationality": "RUS",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "1"
         }
       ]
@@ -2662,7 +2662,7 @@
           "position": "16",
           "driver": "Kevin Magnussen",
           "nationality": "DEN",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "20"
         },
         {
@@ -2676,21 +2676,21 @@
           "position": "18",
           "driver": "Romain Grosjean",
           "nationality": "FRA",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "8"
         },
         {
           "position": "19",
           "driver": "Robert Kubica",
           "nationality": "POL",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "1"
         },
         {
           "position": "20",
           "driver": "George Russell",
           "nationality": "GBR",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "0"
         }
       ]
@@ -2821,42 +2821,42 @@
           "position": "18",
           "driver": "George Russell",
           "nationality": "GBR",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "3"
         },
         {
           "position": "19",
           "driver": "Romain Grosjean",
           "nationality": "FRA",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "2"
         },
         {
           "position": "20",
           "driver": "Kevin Magnussen",
           "nationality": "DEN",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "1"
         },
         {
           "position": "21",
           "driver": "Nicholas Latifi",
           "nationality": "CAN",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "0"
         },
         {
           "position": "22",
           "driver": "Jack Aitken",
           "nationality": "GBR",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "0"
         },
         {
           "position": "23",
           "driver": "Pietro Fittipaldi",
           "nationality": "BRA",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "0"
         }
       ]
@@ -2903,7 +2903,7 @@
           "position": "6",
           "driver": "Lando Norris",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "160"
         },
         {
@@ -2917,7 +2917,7 @@
           "position": "8",
           "driver": "Daniel Ricciardo",
           "nationality": "AUS",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "115"
         },
         {
@@ -2931,14 +2931,14 @@
           "position": "10",
           "driver": "Fernando Alonso",
           "nationality": "ESP",
-          "car": "Alpine Renault",
+          "car": "Alpine",
           "points": "81"
         },
         {
           "position": "11",
           "driver": "Esteban Ocon",
           "nationality": "FRA",
-          "car": "Alpine Renault",
+          "car": "Alpine",
           "points": "74"
         },
         {
@@ -2966,7 +2966,7 @@
           "position": "15",
           "driver": "George Russell",
           "nationality": "GBR",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "16"
         },
         {
@@ -2980,7 +2980,7 @@
           "position": "17",
           "driver": "Nicholas Latifi",
           "nationality": "CAN",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "7"
         },
         {
@@ -2994,7 +2994,7 @@
           "position": "19",
           "driver": "Mick Schumacher",
           "nationality": "GER",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "0"
         },
         {
@@ -3008,7 +3008,7 @@
           "position": "21",
           "driver": "Nikita Mazepin",
           "nationality": "RAF",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "0"
         }
       ]
@@ -3027,14 +3027,14 @@
           "position": "2",
           "driver": "Max Verstappen",
           "nationality": "NED",
-          "car": "Red Bull Racing RBPT",
+          "car": "Red Bull Racing",
           "points": "59"
         },
         {
           "position": "3",
           "driver": "Sergio Pérez",
           "nationality": "MEX",
-          "car": "Red Bull Racing RBPT",
+          "car": "Red Bull Racing",
           "points": "54"
         },
         {
@@ -3055,7 +3055,7 @@
           "position": "6",
           "driver": "Lando Norris",
           "nationality": "GBR",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "35"
         },
         {
@@ -3069,99 +3069,391 @@
           "position": "8",
           "driver": "Valtteri Bottas",
           "nationality": "FIN",
-          "car": "Alfa Romeo Ferrari",
+          "car": "Alfa Romeo Racing",
           "points": "24"
         },
         {
           "position": "9",
           "driver": "Esteban Ocon",
           "nationality": "FRA",
-          "car": "Alpine Renault",
+          "car": "Alpine",
           "points": "20"
         },
         {
           "position": "10",
           "driver": "Kevin Magnussen",
           "nationality": "DEN",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "15"
         },
         {
           "position": "11",
           "driver": "Daniel Ricciardo",
           "nationality": "AUS",
-          "car": "McLaren Mercedes",
+          "car": "McLaren",
           "points": "11"
         },
         {
           "position": "12",
           "driver": "Yuki Tsunoda",
           "nationality": "JPN",
-          "car": "AlphaTauri RBPT",
+          "car": "AlphaTauri",
           "points": "10"
         },
         {
           "position": "13",
           "driver": "Pierre Gasly",
           "nationality": "FRA",
-          "car": "AlphaTauri RBPT",
+          "car": "AlphaTauri",
           "points": "6"
         },
         {
           "position": "14",
           "driver": "Sebastian Vettel",
           "nationality": "GER",
-          "car": "Aston Martin Aramco Mercedes",
+          "car": "Aston Martin",
           "points": "4"
         },
         {
           "position": "15",
           "driver": "Fernando Alonso",
           "nationality": "ESP",
-          "car": "Alpine Renault",
+          "car": "Alpine",
           "points": "2"
         },
         {
           "position": "16",
           "driver": "Guanyu Zhou",
           "nationality": "CHN",
-          "car": "Alfa Romeo Ferrari",
+          "car": "Alfa Romeo Racing",
           "points": "1"
         },
         {
           "position": "17",
           "driver": "Alexander Albon",
           "nationality": "THA",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "1"
         },
         {
           "position": "18",
           "driver": "Lance Stroll",
           "nationality": "CAN",
-          "car": "Aston Martin Aramco Mercedes",
+          "car": "Aston Martin",
           "points": "1"
         },
         {
           "position": "19",
           "driver": "Mick Schumacher",
           "nationality": "GER",
-          "car": "Haas Ferrari",
+          "car": "Haas F1 Team",
           "points": "0"
         },
         {
           "position": "20",
           "driver": "Nico Hülkenberg",
           "nationality": "GER",
-          "car": "Aston Martin Aramco Mercedes",
+          "car": "Aston Martin",
           "points": "0"
         },
         {
           "position": "21",
           "driver": "Nicholas Latifi",
           "nationality": "CAN",
-          "car": "Williams Mercedes",
+          "car": "Williams",
           "points": "0"
+        }
+      ]
+    }
+  ],
+  "teams": [
+    {
+      "color": "#F91536",
+      "name": "Ferrari",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/ferrari-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/ferrari.png.transform/4col/image.png",
+      "fullName": "Scuderia Ferrari",
+      "base": "Maranello, Italy",
+      "teamChief": ["Mattia Binotto"],
+      "technicalChief": ["Enrico Cardile", "Enrico Gualtieri"],
+      "chassis": "F1-75",
+      "powerUnit": "Ferrari",
+      "firstEntry": "1950",
+      "worldChampionships": "16",
+      "highestRaceFinish": "1 (x241)",
+      "polePositions": "233",
+      "fastestLaps": "256",
+      "drivers": [
+        {
+          "name": "Charles Leclerc",
+          "number": "16",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/charles-leclerc/_jcr_content/image.img.640.medium.jpg/1646818893219.jpg"
+        },
+        {
+          "name": "Carlos Sainz",
+          "number": "55",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/carlos-sainz/_jcr_content/image.img.640.medium.jpg/1646818866749.jpg"
+        }
+      ]
+    },
+    {
+      "color": "#3671C6",
+      "name": "Red Bull Racing",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/red-bull-racing-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/red-bull-racing.png.transform/4col/image.png",
+      "fullName": "Oracle Red Bull Racing",
+      "base": "Milton Keynes, United Kingdom",
+      "teamChief": ["Christian Horner"],
+      "technicalChief": ["Pierre Waché"],
+      "chassis": "RB18",
+      "powerUnit": "Red Bull Powertrains",
+      "firstEntry": "1997",
+      "worldChampionships": "4",
+      "highestRaceFinish": "1 (x78)",
+      "polePositions": "75",
+      "fastestLaps": "78",
+      "drivers": [
+        {
+          "name": "Max Verstappen",
+          "number": "1",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/max-verstappen/_jcr_content/image.img.640.medium.jpg/1646819045507.jpg"
+        },
+        {
+          "name": "Sergio Perez",
+          "number": "11",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/sergio-perez/_jcr_content/image.img.640.medium.jpg/1646819228700.jpg"
+        }
+      ]
+    },
+    {
+      "color": "#6CD3BF",
+      "name": "Mercedes",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/mercedes-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/mercedes.png.transform/4col/image.png",
+      "fullName": "Mercedes-AMG Petronas F1 Team",
+      "base": "Brackley, United Kingdom",
+      "teamChief": ["Toto Wolff"],
+      "technicalChief": ["Mike Elliott"],
+      "chassis": "W13",
+      "powerUnit": "Mercedes",
+      "firstEntry": "1970",
+      "worldChampionships": "8",
+      "highestRaceFinish": "1 (x115)",
+      "polePositions": "127",
+      "fastestLaps": "85",
+      "drivers": [
+        {
+          "name": "Lewis Hamilton",
+          "number": "44",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/lewis-hamilton/_jcr_content/image.img.640.medium.jpg/1647334259839.jpg"
+        },
+        {
+          "name": "George Russell",
+          "number": "63",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/george-russell/_jcr_content/image.img.640.medium.jpg/1646750994602.jpg"
+        }
+      ]
+    },
+    {
+      "color": "#F58020",
+      "name": "McLaren",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/mclaren-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/mclaren.png.transform/4col/image.png",
+      "fullName": "McLaren F1 Team",
+      "base": "Woking, United Kingdom",
+      "teamChief": ["Andreas Seidl"],
+      "technicalChief": ["James Key"],
+      "chassis": "MCL36",
+      "powerUnit": "Mercedes",
+      "firstEntry": "1966",
+      "worldChampionships": "8",
+      "highestRaceFinish": "1 (x183)",
+      "polePositions": "156",
+      "fastestLaps": "160",
+      "drivers": [
+        {
+          "name": "Daniel Ricciardo",
+          "number": "3",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/daniel-ricciardo/_jcr_content/image.img.640.medium.jpg/1646818924510.jpg"
+        },
+        {
+          "name": "Lando Norris",
+          "number": "4",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/lando-norris/_jcr_content/image.img.640.medium.jpg/1646819013197.jpg"
+        }
+      ]
+    },
+    {
+      "color": "#C92D4B",
+      "name": "Alfa Romeo Racing",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/alfa-romeo-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/alfa-romeo.png.transform/4col/image.png",
+      "fullName": "Alfa Romeo F1 Team ORLEN",
+      "base": "Hinwil, Switzerland",
+      "teamChief": ["Frédéric Vasseur"],
+      "technicalChief": ["Jan Monchaux"],
+      "chassis": "C42",
+      "powerUnit": "Ferrari",
+      "firstEntry": "1993",
+      "worldChampionships": "N/A",
+      "highestRaceFinish": "1 (x1)",
+      "polePositions": "1",
+      "fastestLaps": "5",
+      "drivers": [
+        {
+          "name": "Valtteri Bottas",
+          "number": "77",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/valtteri-bottas/_jcr_content/image.img.640.medium.jpg/1646819266274.jpg"
+        },
+        {
+          "name": "Guanyu Zhou",
+          "number": "24",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/guanyu-zhou/_jcr_content/image.img.640.medium.jpg/1646818979975.jpg"
+        }
+      ]
+    },
+    {
+      "color": "#2293D1",
+      "name": "Alpine",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/alpine-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/alpine.png.transform/4col/image.png",
+      "fullName": "BWT Alpine F1 Team",
+      "base": "Enstone, United Kingdom",
+      "teamChief": ["Otmar Szafnauer"],
+      "technicalChief": ["Pat Fry"],
+      "chassis": "A522",
+      "powerUnit": "Renault",
+      "firstEntry": "1986",
+      "worldChampionships": "2",
+      "highestRaceFinish": "1 (x21)",
+      "polePositions": "20",
+      "fastestLaps": "15",
+      "drivers": [
+        {
+          "name": "Fernando Alonso",
+          "number": "14",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/fernando-alonso/_jcr_content/image.img.640.medium.jpg/1647334212592.jpg"
+        },
+        {
+          "name": "Esteban Ocon",
+          "number": "31",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/esteban-ocon/_jcr_content/image.img.640.medium.jpg/1647334188097.jpg"
+        }
+      ]
+    },
+    {
+      "color": "#5E8FAA",
+      "name": "AlphaTauri",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/alphatauri-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/alphatauri.png.transform/4col/image.png",
+      "fullName": "Scuderia AlphaTauri",
+      "base": "Faenza, Italy",
+      "teamChief": ["Franz Tost"],
+      "technicalChief": ["Jody Egginton"],
+      "chassis": "AT03",
+      "powerUnit": "Red Bull Powertrains",
+      "firstEntry": "1985",
+      "worldChampionships": "N/A",
+      "highestRaceFinish": "1 (x2)",
+      "polePositions": "1",
+      "fastestLaps": "2",
+      "drivers": [
+        {
+          "name": "Pierre Gasly",
+          "number": "10",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/pierre-gasly/_jcr_content/image.img.640.medium.jpg/1646819179303.jpg"
+        },
+        {
+          "name": "Yuki Tsunoda",
+          "number": "22",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/yuki-tsunoda/_jcr_content/image.img.640.medium.jpg/1648134405786.jpg"
+        }
+      ]
+    },
+    {
+      "color": "#B6BABD",
+      "name": "Haas F1 Team",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/haas-f1-team-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/haas-f1-team.png.transform/4col/image.png",
+      "fullName": "Haas F1 Team",
+      "base": "Kannapolis, United States",
+      "teamChief": ["Guenther Steiner"],
+      "technicalChief": ["Simone Resta"],
+      "chassis": "VF-22",
+      "powerUnit": "Ferrari",
+      "firstEntry": "2016",
+      "worldChampionships": "N/A",
+      "highestRaceFinish": "4 (x1)",
+      "polePositions": "N/A",
+      "fastestLaps": "2",
+      "drivers": [
+        {
+          "name": "Mick Schumacher",
+          "number": "47",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/mick-schumacher/_jcr_content/image.img.640.medium.jpg/1647334235171.jpg"
+        },
+        {
+          "name": "Kevin Magnussen",
+          "number": "20",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/kevin-magnussen/_jcr_content/image.img.640.medium.jpg/1647447969295.jpg"
+        }
+      ]
+    },
+    {
+      "color": "#358C75",
+      "name": "Aston Martin",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/aston-martin-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/aston-martin.png.transform/4col/image.png",
+      "fullName": "Aston Martin Aramco Cognizant F1 Team",
+      "base": "Silverstone, United Kingdom",
+      "teamChief": ["Mike Krack"],
+      "technicalChief": ["Andrew Green"],
+      "chassis": "AMR22",
+      "powerUnit": "Mercedes",
+      "firstEntry": "2018",
+      "worldChampionships": "N/A",
+      "highestRaceFinish": "1 (x1)",
+      "polePositions": "1",
+      "fastestLaps": "N/A",
+      "drivers": [
+        {
+          "name": "Sebastian Vettel",
+          "number": "5",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/sebastian-vettel/_jcr_content/image.img.640.medium.jpg/1646818813887.jpg"
+        },
+        {
+          "name": "Lance Stroll",
+          "number": "18",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/lance-stroll/_jcr_content/image.img.640.medium.jpg/1648135171947.jpg"
+        }
+      ]
+    },
+    {
+      "color": "#37BEDD",
+      "name": "Williams",
+      "logo": "https://www.formula1.com/content/dam/fom-website/teams/2022/williams-logo.png.transform/2col/image.png",
+      "carImg": "https://www.formula1.com/content/dam/fom-website/teams/2022/williams.png.transform/4col/image.png",
+      "fullName": "Williams Racing",
+      "base": "Grove, United Kingdom",
+      "teamChief": ["Jost Capito"],
+      "technicalChief": ["François-Xavier Demaison"],
+      "chassis": "FW44",
+      "powerUnit": "Mercedes",
+      "firstEntry": "1978",
+      "worldChampionships": "9",
+      "highestRaceFinish": "1 (x114)",
+      "polePositions": "128",
+      "fastestLaps": "133",
+      "drivers": [
+        {
+          "name": "Nicholas Latifi",
+          "number": "6",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/nicholas-latifi/_jcr_content/image.img.640.medium.jpg/1646819118069.jpg"
+        },
+        {
+          "name": "Alexander Albon",
+          "number": "23",
+          "photo": "https://www.formula1.com/content/fom-website/en/drivers/alexander-albon/_jcr_content/image.img.640.medium.jpg/1646750995556.jpg"
         }
       ]
     }
