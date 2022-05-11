@@ -37,6 +37,16 @@ export function getDrivers(name: string) {
 }
 
 /**
+ * 获取车队详情
+ */
+export function getTeams(name: string) {
+  return service.request({
+    url: `/mock/api/teams/${name}`,
+    method: "get",
+  });
+}
+
+/**
  * 获取赛程
  */
 export function getSchedule() {

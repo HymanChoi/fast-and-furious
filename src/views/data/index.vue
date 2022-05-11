@@ -1,4 +1,5 @@
 <template>
+  <van-nav-bar title="Data" />
   <van-dropdown-menu>
     <van-dropdown-item v-model="year" :options="years" />
     <van-dropdown-item v-model="type" :options="types" />
@@ -107,7 +108,7 @@ export default defineComponent({
         { text: "2011", value: 2011 },
         { text: "2010", value: 2010 },
       ],
-      standingType: "driver",
+      standingType: "team",
       standingTypes: [
         { text: "Driver", value: "driver" },
         { text: "Team", value: "team" },
@@ -161,7 +162,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .list {
-  height: calc(100vh - 100px);
+  height: calc(100vh - 144px);
   overflow-y: scroll;
 
   &__item {
