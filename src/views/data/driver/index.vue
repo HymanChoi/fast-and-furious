@@ -101,7 +101,6 @@ export default defineComponent({
 <style lang="scss" scoped>
 .driver {
   font-size: 14px;
-  text-align: left;
 
   .back-icon {
     position: absolute;

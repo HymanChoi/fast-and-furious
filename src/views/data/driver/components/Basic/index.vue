@@ -208,7 +208,7 @@ export default defineComponent({
   display: flex;
   flex-direction: column;
   padding: 20px 15px;
-  height: calc(100vh - 410px);
+  height: calc(100vh - 364px);
   overflow-y: scroll;
 
   &__item {

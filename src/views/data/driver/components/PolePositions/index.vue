@@ -43,7 +43,7 @@ export default defineComponent({
 .list {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 405px);
+  height: calc(100vh - 354px);
   padding: 15px 10px;
   overflow-y: scroll;
 
