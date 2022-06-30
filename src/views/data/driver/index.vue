@@ -1,18 +1,18 @@
 <template>
   <div class="driver">
     <van-icon class="back-icon" name="arrow-left" @click="goBack()" />
-    <div v-if="seasonInfo" class="driver__board">
+    <div v-if="info" class="driver__board">
       <div class="driver__board-avatar">
-        <van-image :src="seasonInfo.avatar"></van-image>
+        <van-image :src="info.avatar"></van-image>
       </div>
       <div class="driver__board-driverNumber">
-        {{ seasonInfo.driverNumber }}
+        {{ info.driver_number }}
       </div>
       <div class="driver__board-firstName">
-        {{ seasonInfo.firstName }}
+        {{ info.first_name }}
       </div>
       <div class="driver__board-lastName">
-        {{ seasonInfo.lastName }}
+        {{ info.last_name }}
       </div>
       <van-image
         class="driver__board-flag"
@@ -20,7 +20,7 @@
         lazy-load
         :show-loading="false"
         :show-error="false"
-        :src="seasonInfo.icnFlag"
+        :src="info.icn_flag_img"
       />
     </div>
     <div v-else class="driver__board driver__board_none"></div>
@@ -53,7 +53,6 @@ import PolePositions from "./components/PolePositions/index.vue";
 interface DataProps {
   name: string;
   info: any;
-  seasonInfo: any;
   active: number;
   show: boolean;
   goBack: () => void;
@@ -72,7 +71,6 @@ export default defineComponent({
     const data: DataProps = reactive({
       name: "",
       info: {},
-      seasonInfo: {},
       show: false,
       active: 0,
       /**
@@ -85,10 +83,8 @@ export default defineComponent({
 
     onBeforeMount(async () => {
       data.name = route.query.name as string;
-      data.info = await getDrivers(data.name).then((res: any) => res[0]);
-      data.seasonInfo = data.info.seasonInfo[0];
+      data.info = await getDrivers(data.name).then((res) => res.data);
       data.show = true;
-      console.log(data.info, data.seasonInfo);
     });
 
     return {

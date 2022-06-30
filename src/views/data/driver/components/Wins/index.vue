@@ -2,14 +2,14 @@
   <div class="list">
     <div
       class="list__item"
-      :class="getClassName(item.constructor)"
-      v-for="item in info.winsList"
-      :key="item.season + 'teams'"
+      :class="getClassName(item.team)"
+      v-for="item in info.wins_list"
+      :key="item.season + 'wins_list'"
     >
       <div class="list__item-id">{{ item.id }}</div>
       <div class="list__item-event">{{ item.event }}</div>
       <div class="list__item-round">{{ item.round }}</div>
-      <div class="list__item-constructor">{{ item.constructor }}</div>
+      <div class="list__item-team">{{ item.team }}</div>
     </div>
   </div>
 </template>
@@ -75,7 +75,7 @@ export default defineComponent({
     text-align: center;
   }
 
-  &__item-constructor {
+  &__item-team {
     width: 90px;
     text-align: center;
   }

@@ -8,7 +8,7 @@ import service from "@/utils/axios";
  */
 export function getDriverStandings(year: number) {
   return service.request({
-    url: `/mock/api/standings/driver/${year}`,
+    url: `/api/driver-standings/${year}`,
     method: "get",
   });
 }
@@ -21,7 +21,7 @@ export function getDriverStandings(year: number) {
  */
 export function getTeamStandings(year: number) {
   return service.request({
-    url: `/mock/api/standings/team/${year}`,
+    url: `/api/team-standings/${year}`,
     method: "get",
   });
 }
@@ -31,7 +31,7 @@ export function getTeamStandings(year: number) {
  */
 export function getDrivers(name: string) {
   return service.request({
-    url: `/mock/api/drivers/${name}`,
+    url: `/api/drivers/${name}`,
     method: "get",
   });
 }
@@ -41,7 +41,7 @@ export function getDrivers(name: string) {
  */
 export function getTeams(name: string) {
   return service.request({
-    url: `/mock/api/teams/${name}`,
+    url: `/api/teams/${name}`,
     method: "get",
   });
 }
@@ -51,7 +51,7 @@ export function getTeams(name: string) {
  */
 export function getSchedule() {
   return service.request({
-    url: "/mock/api/schedule",
+    url: "/api/schedules",
     method: "get",
   });
 }

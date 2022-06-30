@@ -29,10 +29,9 @@ export default defineConfig({
     open: true,
     port: 9999,
     proxy: {
-      "/mock": {
+      "/api": {
         target: "http://localhost:3000",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/mock/, ""),
       },
     },
   },

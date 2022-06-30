@@ -6,14 +6,14 @@
     </div>
     <div class="info-list__item">
       <div class="info-list__item-label">First Entry</div>
-      <div class="info-list__item-value">{{ info.firstEntry }}</div>
+      <div class="info-list__item-value">{{ info.first_entry }}</div>
     </div>
     <div class="info-list__item">
       <div class="info-list__item-label">Team Chief</div>
       <div class="info-list__item-value">
-        <span v-for="(person, index) of info.teamChief">
+        <span v-for="(person, index) of info.team_chief">
           {{ person }}
-          <span v-show="index + 1 !== info.teamChief.length"> / </span>
+          <span v-show="index + 1 !== info.team_chief.length"> / </span>
         </span>
       </div>
     </div>
@@ -22,7 +22,7 @@
       <div class="info-list__item-value">
         <span v-for="(person, index) of info.technicalChief">
           {{ person }}
-          <span v-show="index + 1 !== info.technicalChief.length"> / </span>
+          <span v-show="index + 1 !== info.technical_chief.length"> / </span>
         </span>
       </div>
     </div>
@@ -32,7 +32,7 @@
     </div>
     <div class="info-list__item">
       <div class="info-list__item-label">Power Unit</div>
-      <div class="info-list__item-value">{{ info.powerUnit }}</div>
+      <div class="info-list__item-value">{{ info.power_unit }}</div>
     </div>
 
     <van-divider
@@ -45,28 +45,28 @@
     <div class="info-list__totals">
       <div class="info-list__totals__total">
         <div class="info-list__totals__total-num">
-          {{ info.worldChampionships }}
+          {{ info.world_championships }}
         </div>
         <div class="info-list__totals__total-title">World Championships</div>
       </div>
 
       <div class="info-list__totals__total">
         <div class="info-list__totals__total-num">
-          {{ info.polePositions }}
+          {{ info.pole_positions }}
         </div>
         <div class="info-list__totals__total-title">Pole Positions</div>
       </div>
 
       <div class="info-list__totals__total">
         <div class="info-list__totals__total-num">
-          {{ info.fastestLaps }}
+          {{ info.fastest_laps }}
         </div>
         <div class="info-list__totals__total-title">Fastest Laps</div>
       </div>
 
       <div class="info-list__totals__total">
         <div class="info-list__totals__total-num">
-          {{ info.highestRaceFinish }}
+          {{ info.highest_race_finish }}
         </div>
         <div class="info-list__totals__total-title">Highest Race Finish</div>
       </div>

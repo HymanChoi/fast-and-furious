@@ -1,33 +1,33 @@
 <template>
   <van-nav-bar title="Schedule" />
   <van-list class="list">
-    <div v-for="item of schedule" :key="item.cardTitle">
+    <div v-for="item of schedule" :key="item.round">
       <div class="list__item" :style="{ backgroundColor: item.bgc }">
-        <div class="list__item-title">{{ item.cardTitle }}</div>
+        <div class="list__item-title">{{ item.round }}</div>
         <div class="list__item-left">
           <van-image
             class="list__item-flag"
             height="20"
             lazy-load
-            :src="item.countryFlagSrc"
+            :src="item.country_flag_img"
           />
           <div class="list__item-date">
             <span class="list__item-month">{{ item.month }}</span>
             <span class="list__item-day">
-              {{ item.startDate }}-{{ item.endDate }}
+              {{ item.start_date }}-{{ item.end_date }}
             </span>
           </div>
           <div class="list__item-place">
-            {{ item.eventPlace }}
+            {{ item.event_place }}
           </div>
-          <div class="list__item-desc">{{ item.eventTitle }}</div>
+          <div class="list__item-desc">{{ item.event_title }}</div>
         </div>
         <div class="list__item-right">
           <van-image
-            v-if="item.track"
+            v-if="item.circuit_img"
             height="80"
             lazy-load
-            :src="item.track"
+            :src="item.circuit_img"
           />
         </div>
       </div>
@@ -50,7 +50,7 @@ export default defineComponent({
     const data: DataProps = reactive({
       schedule: [],
       async getList() {
-        data.schedule = await getSchedule().then();
+        data.schedule = await getSchedule().then((res) => res.data);
       },
     });
 

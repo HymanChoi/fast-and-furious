@@ -2,7 +2,7 @@
   <van-nav-bar title="Data" />
   <van-dropdown-menu>
     <van-dropdown-item v-model="year" :options="years" />
-    <van-dropdown-item v-model="type" :options="types" />
+    <!-- <van-dropdown-item v-model="type" :options="types" /> -->
     <van-dropdown-item
       v-if="type === 'standings'"
       v-model="standingType"
@@ -107,8 +107,18 @@ export default defineComponent({
         { text: "2012", value: 2012 },
         { text: "2011", value: 2011 },
         { text: "2010", value: 2010 },
+        { text: "2009", value: 2009 },
+        { text: "2008", value: 2008 },
+        { text: "2007", value: 2007 },
+        { text: "2006", value: 2006 },
+        { text: "2005", value: 2005 },
+        { text: "2004", value: 2004 },
+        { text: "2003", value: 2003 },
+        { text: "2002", value: 2002 },
+        { text: "2001", value: 2001 },
+        { text: "2000", value: 2000 },
       ],
-      standingType: "team",
+      standingType: "driver",
       standingTypes: [
         { text: "Driver", value: "driver" },
         { text: "Team", value: "team" },
@@ -129,10 +139,10 @@ export default defineComponent({
        */
       async getList() {
         data.teams = await getTeamStandings(data.year).then(
-          (res: any) => res.list
+          (res: any) => res.data.list
         );
         data.drivers = await getDriverStandings(data.year).then(
-          (res: any) => res.list
+          (res: any) => res.data.list
         );
       },
     });

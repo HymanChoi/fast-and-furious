@@ -6,7 +6,7 @@
     </div>
     <div class="info-list__item">
       <div class="info-list__item-label">Birth Date</div>
-      <div class="info-list__item-value">{{ info.birthDate }}</div>
+      <div class="info-list__item-value">{{ info.birth_date }}</div>
     </div>
     <div class="info-list__item">
       <div class="info-list__item-label">Nationality</div>
@@ -23,7 +23,7 @@
     <div class="info-list__totals">
       <div class="info-list__totals__total">
         <div class="info-list__totals__total-num">
-          {{ cutPercent(info.championships) }}
+          {{ cutPercent(info.world_championships) }}
         </div>
         <div class="info-list__totals__total-title">Championships</div>
       </div>
@@ -37,7 +37,7 @@
 
       <div class="info-list__totals__total">
         <div class="info-list__totals__total-num">
-          {{ cutPercent(info.bestResult) }}
+          {{ cutPercent(info.best_result) }}
         </div>
         <div class="info-list__totals__total-title">Best Result</div>
       </div>
@@ -58,7 +58,7 @@
       </div>
 
       <div class="info-list__totals__total">
-        <div class="info-list__totals__total-num">{{ info.lapsRaced }}</div>
+        <div class="info-list__totals__total-num">{{ info.laps_raced }}</div>
         <div class="info-list__totals__total-title">Laps Raced</div>
       </div>
 
@@ -92,37 +92,37 @@
       </div>
       <div class="info-list__circles__circle">
         <van-circle
-          :current-rate="getRace(info.fastestLaps)"
+          :current-rate="getRace(info.fastest_laps)"
           :rate="30"
           :speed="100"
           :size="80"
           :stroke-width="40"
           layer-color="#f5f6f7"
-          :text="getText(info.fastestLaps)"
+          :text="getText(info.fastest_laps)"
         />
         <div class="info-list__circles__circle-title">Fastest Laps</div>
       </div>
       <div class="info-list__circles__circle">
         <van-circle
-          :current-rate="getRace(info.polePositions)"
+          :current-rate="getRace(info.pole_positions)"
           :rate="30"
           :speed="100"
           :size="80"
           :stroke-width="40"
           layer-color="#f5f6f7"
-          :text="getText(info.polePositions)"
+          :text="getText(info.pole_positions)"
         />
         <div class="info-list__circles__circle-title">Pole Positions</div>
       </div>
       <div class="info-list__circles__circle">
         <van-circle
-          :current-rate="getRace(info.lapsLed)"
+          :current-rate="getRace(info.laps_led)"
           :rate="30"
           :speed="100"
           :size="80"
           :stroke-width="40"
           layer-color="#f5f6f7"
-          :text="getText(info.lapsLed)"
+          :text="getText(info.laps_led)"
         />
         <div class="info-list__circles__circle-title">Laps Led</div>
       </div>
