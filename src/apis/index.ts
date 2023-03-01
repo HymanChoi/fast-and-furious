@@ -49,9 +49,10 @@ export function getTeams(name: string) {
 /**
  * 获取赛程
  */
-export function getSchedule() {
+export function getSchedule(params: any) {
   return service.request({
-    url: "/api/schedules",
+    url: "/api/schedules/",
     method: "get",
+    params,
   });
 }

@@ -50,7 +50,9 @@ export default defineComponent({
     const data: DataProps = reactive({
       schedule: [],
       async getList() {
-        data.schedule = await getSchedule().then((res) => res.data);
+        data.schedule = await getSchedule({ year: "2023" }).then(
+          (res) => res.data
+        );
       },
     });
 
