@@ -24,10 +24,10 @@
         </div>
         <div class="list__item-right">
           <van-image
-            v-if="item.circuit_img"
+            v-if="item.track_img"
             height="80"
             lazy-load
-            :src="item.circuit_img"
+            :src="item.track_img"
           />
         </div>
       </div>
